@@ -1,0 +1,38 @@
+*{
+    margin: auto;
+}
+
+.hero{
+    display: block;
+}
+
+.hero .container{
+    border:1px solid red;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#one{
+    height: 75px;
+}
+
+#two{
+    height: 250px;
+}
+
+#three{
+    height: 250px;
+}
+
+#four{
+    height: 250px;
+}
+
+#five{
+ height: 175px;
+}
+
+#six{
+    height: 75px;
+}
