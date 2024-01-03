@@ -15,6 +15,32 @@
 
 #one{
     height: 75px;
+    flex-direction: row;
+    background-color: #1F2937;
+    align-items: center;
+}
+
+.sub-one-two p{
+    display: inline;
+    text-align: right;
+    padding-left: 50px;
+}
+
+.sub-one-one{
+    margin-left: 10%;
+    font-size: 24px;
+    color: #F9FAF8;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid blue;
+}
+
+.sub-one-two{
+    margin-right: 10%; 
+    font-size: 18px;
+    color: #E5E7EB;
+    text-align: right;
+    border: 1px solid blue;
 }
 
 #two{
