@@ -45,6 +45,33 @@
 
 #two{
     height: 250px;
+    flex-direction: row;
+    background-color: #1F2937;
+}
+
+.sub-two-one h2{
+    font-size: 48px;
+}
+
+.sub-two-one p{
+    font-size: 18px;
+}
+
+.sub-two-one{
+    color:#F9FAF8;
+    border: 1px solid blue;
+    width: 50%;
+    margin-left: 10%;
+    margin-right: 10px;
+}
+
+.sub-two-two{
+    color:#E5E7EB;
+    border: 1px solid blue;
+    width: 50%;
+    margin-right: 10%; 
+    margin-left: 10px;
+    background-color: #727272;
 }
 
 #three{
