@@ -65,6 +65,14 @@
     margin-right: 10px;
 }
 
+.sub-two-one button{
+    background-color: #3882F6;
+    color: white;
+    border-radius: 6px;
+    width: 12%;
+    padding: 3px;
+}
+
 .sub-two-two{
     color:#E5E7EB;
     border: 1px solid blue;
