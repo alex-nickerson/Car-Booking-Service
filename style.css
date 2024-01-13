@@ -72,6 +72,13 @@
     margin-right: 10%; 
     margin-left: 10px;
     background-color: #727272;
+    height: 50%;
+    display: flex;
+}
+
+.sub-two-two p{
+    align-items: center;
+    justify-content: center;
 }
 
 #three{
