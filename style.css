@@ -127,7 +127,21 @@
 }
 
 #four{
-    height: 250px;
+    height: 400px;
+    background-color: #E5E7EB;
+}
+
+.sub-four-one{
+    margin-left: 25%;
+    margin-right: 25%;
+    font-style: italic;
+    color: #1F2937;
+    font-size: 36px;
+}
+
+.sub-four-one h6{
+    text-align: right;
+    font-size: 36px;
 }
 
 #five{
