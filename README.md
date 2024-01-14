@@ -7,5 +7,3 @@ This project has taught and refined my skills in HTML and CSS. Through the use o
 This project also taught me the importance of display: flex, and how to correctly implement it.
 
 I created this 100% by myself using only the knowledge from The Odin Project.
-
-Live website: https://alex-nickerson.github.io/Landing-Page-Template/
