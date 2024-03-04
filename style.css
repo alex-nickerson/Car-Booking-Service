@@ -24,12 +24,6 @@ a{
     align-items: center;
 }
 
-.sub-one-two p{
-    display: inline;
-    text-align: right;
-    padding-left: 50px;
-}
-
 .sub-one-one{
     margin-left: 10%;
     font-size: 24px;
