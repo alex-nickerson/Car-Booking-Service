@@ -123,16 +123,57 @@ a{
 }
 
 #four{
-    height: 400px;
+    height: auto;
     background-color: #E5E7EB;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .sub-four-one{
-    margin-left: 25%;
-    margin-right: 25%;
-    font-style: italic;
+    padding: 30px;
     color: #1F2937;
     font-size: 36px;
+    text-align: left;
+    background-color: #1F2937;
+    border-radius: 16px;
+}
+
+.sub-four-one h1{
+    color: #FFD700;
+    padding-bottom: 30px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.sub-four-one form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sub-four-one input{
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #1F2937;
+    width: 700px;
+}
+
+.sub-four-one label{
+    color: white;
+    text-align: left;
+    width: 735px;
+    font-size: 24px;
+}
+
+#submit{
+    cursor: pointer;
+    transition: 0.2s ease-out;
+    width: 200px;
+    margin-top: 10px;
+}
+
+#submit:hover{
+    background-color: #FFD700;
 }
 
 .sub-four-one h6{
