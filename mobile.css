@@ -1,0 +1,52 @@
+@media screen and (max-width: 600px) {
+
+   
+    #one{
+        height: auto;
+        flex-direction: row;
+        background-color: #1F2937;
+        align-items: center;
+    }
+
+    #two{
+        height: 350px;
+        flex-direction: row;
+        background-color: #1F2937;
+    }
+    
+    .sub-two-one h2{
+        font-size: 150%;
+    }
+
+
+
+    .sub-four-one{
+        width: 80%;
+    }
+    
+    .sub-four-one input{
+        width: 80%;
+    }
+
+    .button{
+        border: 2px solid  gray;
+        padding: 7px;
+        font-size: larger;
+        border-radius: 8px;
+    }
+
+    #three{
+        flex-direction: column;
+        margin: 10px;
+    }
+    
+    *{
+        overflow-x: hidden;
+        }
+
+        .sub-two-one{
+            overflow-x: visible;
+            }
+}
+ 
+  
