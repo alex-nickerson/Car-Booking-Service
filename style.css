@@ -61,8 +61,6 @@ a{
     color:  #FFD700;
 }
 
-
-
 .sub-one-two{
     margin-right: 10%; 
     font-size: 18px;
@@ -115,28 +113,19 @@ a{
     width: 50%;
     margin-right: 10%; 
     margin-left: 10px;
-    background-color: #727272;
     height: 50%;
     display: flex;
 }
 
-.sub-two-two p{
-    align-items: center;
-    justify-content: center;
+.sub-two-two img{
+    margin-top: -100px;
 }
 
 #three{
     height: 500px;
-}
-
-.sub-three-one{
-    width: 50%;
-    text-align: center;
-    margin-top: 3%;
-    font-size: 36px;
-    font-weight: bold;
     display: flex;
     flex-direction: row;
+    gap: 100px;
 }
 
 .sub-three-one img{
@@ -148,10 +137,6 @@ a{
     width: 700px;
     height: 120px;
     margin-top: -150px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 39px;
 }
 
 .sub-three-two div{
@@ -167,7 +152,7 @@ a{
     text-align: center;
 }
 
-.slider{
+.slider, .sliderTwo{
     position: relative;
     width: 100%;
     margin: auto;
@@ -175,7 +160,14 @@ a{
 }
 
 .slider img{
-    width: 100%;
+    width: 350px;
+    height: auto;
+    display: none;
+}
+
+.sliderTwo img{
+    width: 350px;
+    height: auto;
     display: none;
 }
 
@@ -195,6 +187,19 @@ img.displaySlide{
     border: none;
     cursor: pointer;
 }
+
+.sliderTwo button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 10px 15px;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
 .prev{
     left: 200px;
 }
@@ -205,6 +210,8 @@ img.displaySlide{
     from {opacity: .5}
     to {opacity: 1}
 }
+
+
 
 #four{
     height: auto;
