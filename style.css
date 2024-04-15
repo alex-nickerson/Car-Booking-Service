@@ -79,10 +79,19 @@ a{
     padding-top: 15px;
 }
 
+.socials img:hover{
+    width: 50px;
+    transition: 0.1s ease-in;
+}
+
+.socials img:not(:hover){
+    transition: 0.1s ease-in;
+}
+
 .button{
     border: 2px solid  black;
     padding: 15px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.95);
     color: black;
     font-size: 25px;
     font-family:  Arial;
@@ -155,6 +164,7 @@ a{
     display: block;
     border: none;
     border-radius: 0px;
+    padding-bottom: 20px;
 }
 
 
@@ -164,21 +174,24 @@ a{
     margin: auto;
 }
 
+.sliderTwo{
+    margin-top: 15px;
+}
+
 .slider img{
-    width: 500px;
-    height: auto;
+    width: 550px;
+    height: 400px;
     display: none;
     border: 5px solid #1F2937;
     border-radius: 12px;
 }
 
 .sliderTwo img{
-    width: 500px;
-    height: auto;
+    width: 550px;
+    height: 400px;
     display: none;
     border: 5px solid #1F2937;
     border-radius: 12px;
-    margin-top: 30px;
 }
 
 img.displaySlide{
@@ -188,33 +201,44 @@ img.displaySlide{
 }
 .slider button{
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     font-size: 2rem;
-    padding: 10px 15px;
-    background-color: hsla(0, 0%, 0%, 0.5);
-    color: white;
+    padding: 5px 10px;
+    background: transparent;
+    color: black;
     border: none;
     cursor: pointer;
 }
 
 .sliderTwo button{
     position: absolute;
-    top: 50%;
+    top: 45%;
     transform: translateY(-50%);
     font-size: 2rem;
     padding: 10px 15px;
-    background-color: hsla(0, 0%, 0%, 0.5);
-    color: white;
+    background: transparent;
+    color: black;
     border: none;
     cursor: pointer;
 }
 
+.sliderButtons{
+    width: 700px;
+    height: 60px;
+    transform: translateY(-250px);
+}
+
+.sliderButtonsTwo{
+    width: 700px;
+    height: 60px;
+    transform: translateY(-250px);
+}
+
 .prev{
-    left: 200px;
+    left: auto;
 }
 .next{
-    right: 200px;
+    right: auto;
+    margin-left: 91%;
 }
 @keyframes fade {
     from {opacity: .5}
@@ -271,6 +295,7 @@ img.displaySlide{
     transition: 0.2s ease-out;
     width: 200px;
     margin-top: 10px;
+    font-size: 16px;
 }
 
 #submit:hover{
