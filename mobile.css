@@ -10,14 +10,14 @@
 
     #two{
         height: 350px;
-        flex-direction: row;
-        background-color: #1F2937;
     }
     
 
     .sub-two-one h2{
         font-size: 150%;
     }
+
+
 
 
 
@@ -32,6 +32,7 @@
     .button{
         border: 2px solid  gray;
         padding: 7px;
+        
         font-size: larger;
         border-radius: 8px;
     }
