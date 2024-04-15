@@ -53,7 +53,7 @@ a{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     height: 75px;
     flex-direction: row;
-    background-color: #1F2937;
+    background-color: #1F1F1F;
     align-items: center;
 }
 
@@ -99,12 +99,11 @@ a{
 }
 
 #two{
-    height: 800px;
+    height: 100vh;
     background-image: url("images/test.png");
     background-repeat: no-repeat;
     background-size: cover;
     flex-direction: row;
-    background-color: #1F2937;
 }
 
 .sub-two-one h2{
@@ -112,7 +111,9 @@ a{
 }
 
 #text{
-    color:#ffd900;
+    background: -webkit-linear-gradient(#97652B, #EEE695);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .sub-two-one p{
@@ -257,17 +258,20 @@ img.displaySlide{
     color: #1F2937;
     font-size: 36px;
     text-align: left;
-    background-color: #1F2937;
+    background-color: #1F1F1F;
     border-radius: 16px;
     font-family: Bell MT;
 
 }
 
 .sub-four-one h1{
-    color: #FFD700;
     padding-bottom: 30px;
     font-size: 50px;
     text-align: center;
+
+    background: -webkit-linear-gradient(#97652B, #EEE695);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .sub-four-one form{
@@ -351,7 +355,7 @@ img.displaySlide{
 
 #six{
     height: 75px;
-    background-color: #1F2937;
+    background-color: #1F1F1F;
     color: #F9FAF8
     
 }
