@@ -3,6 +3,7 @@
    
     #one{
         height: auto;
+        
     }
 
     #two{
@@ -15,6 +16,7 @@
     
     .sub-one-one img{
         position: absolute;
+        height: 5vh;
         margin-top: -22px;
     }
 
@@ -25,7 +27,8 @@
         align-items: center;
         justify-content: center;
         margin-top: 35px;
-        margin-left: 15%;
+        margin-left: 18vw;
+        
     }
 
     .sub-two-one h2{
@@ -34,13 +37,13 @@
 
 
     .slider img{
-        height: 200px;
-        width: 70%;
+        height: 25vh;
+        width: 70vw;
     }
 
     .sliderTwo img{
-        height: 200px;
-        width: 70%;
+        height: 25vh;
+        width: 70vw;
     }
 
     .slider{
@@ -95,6 +98,16 @@
         .sub-two-one{
             overflow-x: visible;
             }
+
+
+    .social-footer{
+        display: flex;
+        gap: 15px;
+        
+        
+    }
 }
+
+
  
   

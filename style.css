@@ -79,6 +79,11 @@ a{
     padding-top: 15px;
 }
 
+.social-footer{
+    display: none;
+
+}
+
 .socials img:hover{
     width: 50px;
     transition: 0.1s ease-in;
