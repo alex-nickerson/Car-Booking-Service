@@ -3,7 +3,7 @@
    
     #one{
         height: auto;
-        
+        position: absolute;
     }
 
     #two{
@@ -11,7 +11,7 @@
     }
 
     .socials{
-        visibility: hidden;
+        display: none;
     }
     
     .sub-one-one img{
@@ -27,8 +27,8 @@
         align-items: center;
         justify-content: center;
         margin-top: 35px;
-        margin-left: 18vw;
-        
+        margin-left: 5px;
+        padding: 5px;
     }
 
     .sub-two-one h2{
@@ -54,7 +54,7 @@
         width: 100%;
         height: 60px;
         transform: translateY(-150px);
-        margin-left: -5px;
+        margin-left: -8px;
         overflow: visible;
     }
 
@@ -62,12 +62,8 @@
         width: 100%;
         height: 60px;
         transform: translateY(-150px);
-        margin-left: -5px;
+        margin-left: -15px;
         overflow: visible;
-    }
-
-    .next{
-        margin-left: 91%;
     }
 
     .sub-four-one{
@@ -85,11 +81,8 @@
     }
 
     .button{
-        border: 2px solid  gray;
-        padding: 7px;
-        
+        padding: 6px;
         font-size: larger;
-        border-radius: 8px;
     }
 
     #three{
@@ -112,6 +105,10 @@
 
     .downArrow{
         display: none;
+    }
+
+    #six{
+        height: 10vh;
     }
 }
 
