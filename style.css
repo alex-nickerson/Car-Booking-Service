@@ -73,20 +73,26 @@ a{
     width: 40px;
 }
 
+.phone-icon{
+    height: auto;
+    width: 40px;
+}
+
 .socials{
     display: flex;
-    gap: 10px;
+    gap: 15px;
     height: 70px;
     color: #F9FAF8;
     font-size: 20px;
     margin-top: 3px;
+    margin-right: 10%;
 }
 
 .social-footer{
     display: none;
 }
 
-.socials img:hover{
+.nav-logo:hover{
     width: 50px;
     transition: 0.1s ease-in;
 }
