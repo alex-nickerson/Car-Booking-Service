@@ -36,13 +36,8 @@
     }
 
 
-    .slider img{
-        height: 25vh;
-        width: 70vw;
-    }
-
-    .sliderTwo img{
-        height: 25vh;
+    .slider img, .sliderTwo img{
+        height: 30vh;
         width: 70vw;
     }
 
