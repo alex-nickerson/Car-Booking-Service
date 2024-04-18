@@ -7,11 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mobile.css">
     <link rel="icon" href="images/logo.png">
-
-    <script async 
-        src="https://maps.googleapis.com/maps/api/js?
-        key=AIzaSyCwxaTkI8lOFC6XrTaa4Pbh1-FS6U_4q-E&libraries=places&callback=initMap"></script>
-
 </head>
 <body>
     <div class="hero">
@@ -83,7 +78,6 @@
                 <input type="time" name="Time" required>
                 <label for="pickup location">Pickup Location</label>
                 <input  name="search_input" type="text" placeholder="1234 Example Road, Toronto, ON A1B 2C3" required>
-                <input type="text" name="Pickup Location" placeholder="Enter Pickup Location" required>
                 <label for="Dropoff location">Dropoff Location</label>
                 <input  name="search_input" type="text" placeholder="1234 Example Road, Toronto, ON A1B 2C3" required >
                 <label for="Notes">Additional Requests</label>
@@ -106,21 +100,5 @@
     
     <script src="script.js"></script>
     
-    <script>
-        // Alternatively, you can target your input element by ID
-        // Replace querySelector('input[name="search_input"]') with getElementById('search_input') 
-          // and insert id="search_input" in your form's input field
-        var searchInput = document.querySelector('input[name="search_input"]');
-        document.addEventListener('DOMContentLoaded', function () {
-          var autocomplete = new google.maps.places.Autocomplete(searchInput, { 
-            types: ['geocode'],
-            componentRestrictions: { country: 'us' }
-          }); 
-          autocomplete.addListener('place_changed', function () { 
-            var near_place = autocomplete.getPlace(); 
-          });
-        });
-      </script>
-
 </body>
 </html>
