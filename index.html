@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mobile.css">
     <link rel="icon" href="images/logo.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDloVlcCYZ3KS_arh5DEzPqsJV6nB69qfM&libraries=places"></script>
+
 </head>
 <body>
     <div class="hero">
@@ -77,9 +81,9 @@
                 <label for="Time">Pickup Time</label>
                 <input type="time" name="Time" required>
                 <label for="pickup location">Pickup Location</label>
-                <input type="text" name="Pickup Location" placeholder="1234 Example Road, Toronto, ON A1B 2C3" required>
+                <input type="text" id="location" name="Pickup Location" placeholder="1234 Example Road, Toronto, ON A1B 2C3" required>
                 <label for="Dropoff location">Dropoff Location</label>
-                <input type="text" name="Dropoff Location" placeholder="1234 Example Road, Toronto, ON A1B 2C3" required >
+                <input type="text" id="location" name="Dropoff Location" placeholder="1234 Example Road, Toronto, ON A1B 2C3" required >
                 <label for="Notes">Additional Requests</label>
                 <input type="text" name="Additional Notes" placeholder="Additional Requests" >
 
@@ -97,6 +101,19 @@
             </div>
         </div>
     </div>
-<script src="script.js"></script>
+    
+    <script src="script.js"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var autocomplete;
+            var id = location;
+
+            autocomplete = new google.maps.places.Autocomplete((document.getElementById(id)), {
+                types:['geocode'],
+            })
+        });
+    </script>
+
 </body>
 </html>
