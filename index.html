@@ -9,7 +9,7 @@
     <link rel="icon" href="images/logo.png">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDloVlcCYZ3KS_arh5DEzPqsJV6nB69qfM&libraries=places"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpduBEZGhR8QD7b2pb-k0HjF39xiFWWbg&libraries=places&callback=initMap"></script>
 
 </head>
 <body>
@@ -81,9 +81,9 @@
                 <label for="Time">Pickup Time</label>
                 <input type="time" name="Time" required>
                 <label for="pickup location">Pickup Location</label>
-                <input type="text" id="location" name="Pickup Location" placeholder="1234 Example Road, Toronto, ON A1B 2C3" required>
+                <input  name="search_input" type="text" placeholder="1234 Example Road, Toronto, ON A1B 2C3" required>
                 <label for="Dropoff location">Dropoff Location</label>
-                <input type="text" id="location" name="Dropoff Location" placeholder="1234 Example Road, Toronto, ON A1B 2C3" required >
+                <input  name="search_input" type="text" placeholder="1234 Example Road, Toronto, ON A1B 2C3" required >
                 <label for="Notes">Additional Requests</label>
                 <input type="text" name="Additional Notes" placeholder="Additional Requests" >
 
@@ -104,16 +104,21 @@
     
     <script src="script.js"></script>
     
-    <script type="text/javascript">
-        $(document).ready(function(){
-            var autocomplete;
-            var id = location;
-
-            autocomplete = new google.maps.places.Autocomplete((document.getElementById(id)), {
-                types:['geocode'],
-            })
+    <script>
+        // Alternatively, you can target your input element by ID
+        // Replace querySelector('input[name="search_input"]') with getElementById('search_input') 
+          // and insert id="search_input" in your form's input field
+        var searchInput = document.querySelector('input[name="search_input"]');
+        document.addEventListener('DOMContentLoaded', function () {
+          var autocomplete = new google.maps.places.Autocomplete(searchInput, { 
+            types: ['geocode'],
+            componentRestrictions: { country: 'us' }
+          }); 
+          autocomplete.addListener('place_changed', function () { 
+            var near_place = autocomplete.getPlace(); 
+          });
         });
-    </script>
+      </script>
 
 </body>
 </html>
